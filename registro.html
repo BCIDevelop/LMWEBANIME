@@ -1,0 +1,209 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+	<header class="site-header">
+		<div class="hero">
+			<div class="contenido-header">
+				<nav class="redes-sociales">
+					<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				</nav>
+				
+				<div class="informacion-evento">
+					<div class="clearfix">
+						<p class="fecha"><i class="fa fa-calendar" aria-hidden="true"></i>25-06 Jun</p>
+						<p class="ciudad"><i class="fa fa-map-marker" aria-hidden="true"></i>Lima, Perú</p>
+					</div>
+					<h1 class="nombre-sitio">LmWebAnime</h1>
+					<p class="slogan">La mejor referencia de <span>anime</span></p>
+				</div><!--.informacion-evento-->
+			</div><!--.contenido-header-->
+		</div><!--.hero-->
+	</header>
+	
+	<div class="barra">
+		<div class="contenedor clearfix">
+			<div class="logo">
+				<p>LmWebAnime</p>
+			</div>
+			
+			<div class="menu-movil">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			
+			<nav class="navegacion-principal clearfix">
+				<a href="#">Eventos</a>
+				<a href="#">Calendario</a>
+				<a href="#">Noticias</a>
+				<a href="#">Productos</a>
+			</nav>
+		</div><!--.contenedor-->
+	</div><!--.barra-->
+	
+	<section class="seccion contenedor">
+		<h2>Registro de Usuarios</h2>
+		<form id="registro" class="registro" action="index.html" method="post">
+			<div id="datos_usuario" class="registro caja clearfix">
+				<div class = "campo">
+					<label for="nombre">Nombre o alias:</label>
+					<input type="text" id="nombre" name="nombre" placeholder="Tu Nombre">
+				</div>
+				<div class = "campo">
+					<label for="apellido">Apellido:</label>
+					<input type="text" id="apellido" name="apellido" placeholder="Tu Apellido">
+				</div>
+				<div class = "campo">
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" placeholder="Tu Email">
+				</div>
+				<div id="error"></div>
+			</div><!--#datos_usuario-->
+			
+			<div id="paquetes" class="paquetes">
+				<h3>Elige tus productos</h3>
+				<ul class="lista-precio clearfix">
+					<li>
+						<div class="tabla-precio">
+							<h3>Figura Mihawk</h3>
+							<img src="img/mihawk-p.jpg">
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<div class="orden">
+								<label for="producto1">Artículos deseados:</label>
+								<input type="number" min="0" id="producto1" placeholder="0">
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="tabla-precio">
+							<h3>Figura Nico Robbin</h3>
+							<img src="img/nico-p.jpg">
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<div class="orden">
+								<label for="producto2">Artículos deseadas:</label>
+								<input type="number" min="0" id="producto2" placeholder="0">
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="tabla-precio">
+							<h3>Figura Monkey D. Luffy</h3>
+							<img src="img/luffy-p.jpg">
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<div class="orden">
+								<label for="producto3">Artículos deseados:</label>
+								<input type="number" min="0" id="producto3" placeholder="0">
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div><!--#paquetes-->
+			
+			<div id="resumen" class="resumen">
+				<h3>Pago y Extras</h3>
+				<div class="caja clearfix">
+					<div class="extras">
+						<input type="button" id="calcular" class="button" value="Calcular">
+					</div><!--.extras-->
+					
+					<div class="total">
+						<p>Resumen:</p>
+						<div id="lista-productos">
+						
+						</div>
+						<p>Total:</p>
+						<div id="suma-total">
+						
+						</div>
+						<input type="submit" id="btnRegistro" class="button" value="Pagar">
+					</div><!--.total-->
+				</div><!--.caja-->
+			</div><!--.#resumen-->
+		</form>
+	</section>
+	
+	<footer class="site-footer">
+		<div class="contenedor clearfix">
+			<div class="footer-informacion">
+				<h3>Sobre <span>gdlwebcamp</span></h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+			<div class="ultimos-tweets">
+				<h3>Últimos <span>tweets</span></h3>
+				<ul>
+					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+				</ul>
+			</div>
+			<div class="menu">
+				<h3>Redes <span>sociales</span></h3>
+				<nav class="redes-sociales">
+					<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				</nav>
+			</div>
+		</div>
+		
+		<p class="copyright">
+			Todos los derechos reservados GDLWEBCAMP 2016.
+		</p>
+	</footer>
+				
+				
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>

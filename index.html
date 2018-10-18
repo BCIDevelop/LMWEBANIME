@@ -1,0 +1,351 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/lightbox.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" />
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+	<header class="site-header">
+		<div class="hero">
+			<div class="contenido-header">
+				<nav class="redes-sociales">
+					<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				</nav>
+				
+				<div class="informacion-evento">
+					<div class="clearfix">
+						<p class="fecha"><i class="fa fa-calendar" aria-hidden="true"></i>25-06 Jun</p>
+						<p class="ciudad"><i class="fa fa-map-marker" aria-hidden="true"></i>Lima, Perú</p>
+					</div>
+					<h1 class="nombre-sitio">LmWebAnime</h1>
+					<p class="slogan">La mejor referencia de <span>anime y manga</span></p>
+				</div><!--.informacion-evento-->
+			</div><!--.contenido-header-->
+		</div><!--.hero-->
+	</header>
+	
+	<div class="barra">
+		<div class="contenedor clearfix">
+			<div class="logo">
+				<p>LmWebAnime</p>
+			</div>
+			
+			<div class="menu-movil">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			
+			<nav class="navegacion-principal clearfix">
+				<a href="#">Clanes</a>
+				<a href="eventos.html">Eventos</a>
+				<a href="#">Calendario</a>
+				<a href="#">Noticias</a>
+				<a href="registro.html">Productos</a>
+			</nav>
+		</div><!--.contenedor-->
+	</div><!--.barra-->
+	
+	<section class="seccion contenedor">
+		<h2>La mejor referencia de anime</h2>
+		<p>
+			Somos LmWebAnime pagina dedicada totalmente al anime y al manga. Puedes encontrar reuniones, festivales, conciertos, productos y más. 
+			Si te gusta el anime puedes registrarte a nuestra página.
+		</p>
+	</section><!--seccion-->
+		
+	<section class="programa">
+		<div class="contenedor-video">
+			<img src="img/bg-arturia.jpg">
+		</div><!--contenedor-video-->
+		
+		<div class="contenido-programa">
+			<div class="contenedor">
+				<div class="programa-evento">
+					<h2>Programa de Eventos</h2>
+					<nav class="menu-programa">
+						<a href="#reuniones"><i class="fa fa-users" aria-hidden="true"></i>Reuniones</a>
+						<a href="#festivales"><i class="fa fa-renren" aria-hidden="true"></i>Festivales</a>
+						<a href="#conciertos"><i class="fa fa-music" aria-hidden="true"></i>Conciertos</a>
+					</nav>
+					
+					<div id="reuniones" class="info-curso ocultar clearfix">
+						<div class="detalle-evento">
+							<h3>Reunion 1</h3>
+							<p><i class="fa fa-clock-o" aria-hidden="true"></i>16:00 hrs</p>
+							<p><i class="fa fa-calendar" aria-hidden="true"></i>10 de Dic</p>
+							<p><i class="fa fa-map-marker" aria-hidden="true"></i>Dirección 1</p>
+						</div>
+						<div class="detalle-evento">
+							<h3>Reunion 2</h3>
+							<p><i class="fa fa-clock-o" aria-hidden="true"></i>20:00 hrs</p>
+							<p><i class="fa fa-calendar" aria-hidden="true"></i>10 de Dic</p>
+							<p><i class="fa fa-map-marker" aria-hidden="true"></i>Dirección 2</p>
+						</div>
+						<a href="#" class="button float-right">Ver Todos</a>
+					</div><!--#talleres-->
+					<div id="festivales" class="info-curso ocultar clearfix">
+						<div class="detalle-evento">
+							<h3>Festival 1</h3>
+							<p><i class="fa fa-clock-o" aria-hidden="true"></i>16:00 hrs</p>
+							<p><i class="fa fa-calendar" aria-hidden="true"></i>10 de Dic</p>
+							<p><i class="fa fa-map-marker" aria-hidden="true"></i>Dirección 1</p>
+						</div>
+						<div class="detalle-evento">
+							<h3>Festival 2</h3>
+							<p><i class="fa fa-clock-o" aria-hidden="true"></i>20:00 hrs</p>
+							<p><i class="fa fa-calendar" aria-hidden="true"></i>10 de Dic</p>
+							<p><i class="fa fa-map-marker" aria-hidden="true"></i>Dirección 2</p>
+						</div>
+						<a href="#" class="button float-right">Ver Todos</a>
+					</div><!--#talleres-->
+					<div id="conciertos" class="info-curso ocultar clearfix">
+						<div class="detalle-evento">
+							<h3>Concierto 1</h3>
+							<p><i class="fa fa-clock-o" aria-hidden="true"></i>16:00 hrs</p>
+							<p><i class="fa fa-calendar" aria-hidden="true"></i>10 de Dic</p>
+							<p><i class="fa fa-map-marker" aria-hidden="true"></i>Dirección 1</p>
+						</div>
+						<div class="detalle-evento">
+							<h3>Concierto 2</h3>
+							<p><i class="fa fa-clock-o" aria-hidden="true"></i>20:00 hrs</p>
+							<p><i class="fa fa-calendar" aria-hidden="true"></i>10 de Dic</p>
+							<p><i class="fa fa-map-marker" aria-hidden="true"></i>Dirección 2</p>
+						</div>
+						<a href="#" class="button float-right">Ver Todos</a>
+					</div><!--#talleres-->
+				</div><!--.programa-evento-->
+			</div><!--.contenedor-->
+		</div><!--.contenido-programa-->
+	</section><!--.programa-->
+	
+	<section class="noticias contenedor seccion">
+		<h2>Nuestras Noticias</h2>
+		<ul class="lista-noticias clearfix">
+			<li>
+				<div class="noticia">
+					<img src="img/noticia1.jpg">
+					<p>Noticia 1</p>
+				</div>
+			</li>
+			<li>
+				<div class="noticia">
+					<img src="img/noticia2.jpg">
+					<p>Noticia 2</p>
+				</div>
+			</li>
+			<li>
+				<div class="noticia">
+					<img src="img/noticia3.jpg">
+					<p>Noticia 3</p>
+				</div>
+			</li>
+			<li>
+				<div class="noticia">
+					<img src="img/noticia4.jpg">
+					<p>Noticia 4</p>
+				</div>
+			</li>
+			<li>
+				<div class="noticia">
+					<img src="img/noticia5.jpg">
+					<p>Noticia 5</p>
+				</div>
+			</li>
+			<li>
+				<div class="noticia">
+					<img src="img/noticia6.jpg">
+					<p>Noticia 6</p>
+				</div>
+			</li>
+		</ul>
+	</section><!--.noticias-->
+	
+	<div class="contador parallax">
+		<div class="contenedor">
+			<ul class="resumen-evento clearfix">
+				<li><p class="numero"></p>Noticias</li>
+				<li><p class="numero"></p>Reuniones</li>
+				<li><p class="numero"></p>Días</li>
+				<li><p class="numero"></p>Festivales</li>
+			</ul>
+		</div><!--.contenedor-->
+	</div><!--.contador parallax-->
+	
+	<!--<section class="precios seccion">
+		<h2>Productos</h2>
+		<div class="contenedor">
+			<ul class="lista-precio clearfix">
+				<li>
+					<div class="tabla-precio">
+						<h3>Figura Mihawk</h3>
+						<img src="img/mihawk-p.jpg">
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<a href="#" class="button hollow">Comprar</a>
+					</div>
+				</li>
+				<li>
+					<div class="tabla-precio">
+						<h3>Figura Nico Robbin</h3>
+						<img src="img/nico-p.jpg">
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<a href="#" class="button">Comprar</a>
+					</div>
+				</li>
+				<li>
+					<div class="tabla-precio">
+						<h3>Figura Monkey D. Luffy</h3>
+						<img src="img/luffy-p.jpg">
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<a href="#" class="button hollow">Comprar</a>
+					</div>
+				</li>
+			</ul>
+		</div><!--.contenedor->
+	</section><!--.precios-->
+	
+	<div id="mapa" class="mapa">
+	
+	</div><!--.mapa-->
+	
+	<section class="seccion testimonios">
+		<h2>Comentarios</h2>
+		<div class="testimoniales contenedor clearfix">
+			<div class="testimonial">
+				<blockquote>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<footer class="info-testimonial clearfix">
+						<img src="img/testimonial.jpg" alt="imagen testimonial">
+						<cite>Nombre <span>Apodo Otaku</span></cite>
+					</footer>
+				</blockquote>
+			</div><!--.testimonial-->
+			<div class="testimonial">
+				<blockquote>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<footer class="info-testimonial clearfix">
+						<img src="img/testimonial.jpg" alt="imagen testimonial">
+						<cite>Nombre <span>Apodo Otaku</span></cite>
+					</footer>
+				</blockquote>
+			</div><!--.testimonial-->
+			<div class="testimonial">
+				<blockquote>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<footer class="info-testimonial clearfix">
+						<img src="img/testimonial.jpg" alt="imagen testimonial">
+						<cite>Nombre <span>Apodo Otaku</span></cite>
+					</footer>
+				</blockquote>
+			</div><!--.testimonial-->
+		</div><!--.testimoniales-->
+	</section><!--.testimonios-->
+	
+	<div class="newsletter parallax">
+		<div class="contenido contenedor">
+			<p>regístrate al newsletter:</p>
+			<h3>lmwebanime</h3>
+			<a href="#" class="button transparente">Registro</a>
+		</div><!--.contenido-->
+	</div><!--.newsletter-->
+	
+	<section class="seccion">
+		<h2>Faltan</h2>
+		<div class="cuenta-regresiva contenedor">
+			<ul class="clearfix">
+				<li><p class="numero">80</p>días</li>
+				<li><p class="numero">15</p>horas</li>
+				<li><p class="numero">5</p>minutos</li>
+				<li><p class="numero">30</p>segundos</li>
+			</ul>
+		</div>
+	</section>
+	
+	<footer class="site-footer">
+		<div class="contenedor clearfix">
+			<div class="footer-informacion">
+				<h3>Sobre <span>lmwebanime</span></h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+			<div class="ultimos-tweets">
+				<h3>Últimos <span>tweets</span></h3>
+				<ul>
+					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+				</ul>
+			</div>
+			<div class="menu">
+				<h3>Redes <span>sociales</span></h3>
+				<nav class="redes-sociales">
+					<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				</nav>
+			</div>
+		</div>
+		
+		<p class="copyright">
+			Todos los derechos reservados GDLWEBCAMP 2016.
+		</p>
+	</footer>
+				
+				
+	<script src="js/vendor/modernizr-3.6.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+	<script src="js/plugins.js"></script>
+	<script src="js/jquery.lettering.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/lightbox.js"></script>
+	<script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"></script>
+	<script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>
