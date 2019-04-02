@@ -2,7 +2,9 @@ var request = require('request');
 var router = require('./routes.js');
 var express = require('express');
 var app= express();
+var ejs= require('ejs');
 // Rutas de nuestros html
+app.set('view engine', 'ejs');
 app.use('/', router);
 //Rutas de archivo estaticos usados por nuestros html
 app.use('/css',express.static(__dirname +'/css'));
